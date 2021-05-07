@@ -1,6 +1,12 @@
 {
+  "ipcMode": null,
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": null,
+      "entryPoint": null,
       "portMappings": [
         {
           "hostPort": 0,
@@ -8,9 +14,39 @@
           "containerPort": 80
         }
       ],
+      "command": null,
+      "linuxParameters": null,
       "cpu": 0,
-      "image": "642321162742.dkr.ecr.us-east-1.amazonaws.com/nginx1:BUILD_NUMBER",
-      "name": "My_newecs"
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": null,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "642321162742.dkr.ecr.us-east-1.amazonaws.com/nginx1:latest",
+      "startTimeout": null,
+      "firelensConfiguration": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "ecs"
     }
   ],
   "placementConstraints": [],
@@ -19,7 +55,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:642321162742:task-definition/Ecs:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:642321162742:task-definition/Ecs:4",
   "family": "Ecs",
   "requiresAttributes": [
     {
@@ -35,7 +71,7 @@
   ],
   "networkMode": null,
   "cpu": "128",
-  "revision": 1,
+  "revision": 4,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,

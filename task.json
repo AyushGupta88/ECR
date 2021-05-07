@@ -1,52 +1,21 @@
 {
+	"containerDefinitions": [{
 
-   "containerDefinitions":[
-
-      {
-
-         "portMappings":[
-
-            {
-
-               "hostPort":0,
-
-               "protocol":"tcp",
-
-               "containerPort":80
-
-            }
-
-         ],
-
-         "cpu":0,
-
-         "image":"642321162742.dkr.ecr.us-east-1.amazonaws.com/nginx1:BUILD_NUMBER",
-
-         "name":"My_newecs"
-
-      }
-
-   ],
-
-   "placementConstraints":[
-
-      
-
-   ],
-
-   "memory":"256",
-
-   "compatibilities":[
-
-      "EC2"
-
-   ],
-
-   "requiresCompatibilities":[
-
-      "EC2"
-
-   ]
-
+		"portMappings": [{
+			"hostPort": 0,
+			"protocol": "tcp",
+			"containerPort": 80
+		}],
+		"cpu": 256,
+		"memoryReservation": 300,
+		"image": "642321162742.dkr.ecr.us-east-1.amazonaws.com/nginx1:BUILD_NUMBER",
+		"essential": true,
+		"readonlyRootFilesystem": false,
+		"name": "aap"
+	}],
+	"taskRoleArn": "arn:aws:iam::642321162742:role/ecsTaskExecutionRole",
+	"family": "Ayush",
+	"requiresCompatibilities": [
+		"EC2"
+	]
 }
-

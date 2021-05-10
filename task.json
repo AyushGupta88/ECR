@@ -14,7 +14,7 @@
 		"name": "aap"
 	}],
 	"taskRoleArn": "arn:aws:iam::642321162742:role/ecsTaskExecutionRole",
-	"family": "Ayush",
+	"family": "Ecs",
 	"requiresCompatibilities": [
 		"EC2"
 	]

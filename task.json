@@ -11,7 +11,7 @@
 		"image": "642321162742.dkr.ecr.us-east-1.amazonaws.com/nginx1:BUILD_NUMBER",
 		"essential": true,
 		"readonlyRootFilesystem": false,
-		"name": "app"
+		"name": "ecs"
 	}],
 	"taskRoleArn": "arn:aws:iam::642321162742:role/ecsTaskExecutionRole",
 	"family": "Ecs",
